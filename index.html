@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج بيانات العميل</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">استمارة تقديم للفيزة السياحية الأمريكية</h2>
+        <form id="clientForm">
+            <!-- المعلومات الشخصية -->
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">المعلومات الشخصية</div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">الاسم:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_number" class="form-label">رقم البطاقة الوطنية:</label>
+                        <input type="text" id="id_number" name="id_number" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">رقم الهاتف:</label>
+                        <input type="text" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="marital_status" class="form-label">الحالة الاجتماعية:</label>
+                        <input type="text" id="marital_status" name="marital_status" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <!-- معلومات السفر -->
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">معلومات السفر</div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="visited_us" class="form-label">هل زرت أمريكا سابقاً:</label>
+                        <input type="text" id="visited_us" name="visited_us" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="visa_number" class="form-label">رقم الفيزة:</label>
+                        <input type="text" id="visa_number" name="visa_number" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="arrival_date" class="form-label">تاريخ الوصول إلى أمريكا:</label>
+                        <input type="date" id="arrival_date" name="arrival_date" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <!-- معلومات العمل -->
+            <div class="card mb-4">
+                <div class="card-header bg-info text-white">معلومات العمل</div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="company_name" class="form-label">اسم الشركة:</label>
+                        <input type="text" id="company_name" name="company_name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="company_address" class="form-label">عنوان الشركة:</label>
+                        <input type="text" id="company_address" name="company_address" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <!-- المرفقات -->
+            <div class="card mb-4">
+                <div class="card-header bg-warning text-white">المرفقات</div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="passport_copy" class="form-label">نسخة من جواز السفر:</label>
+                        <input type="file" id="passport_copy" name="passport_copy" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="photo" class="form-label">صورة شخصية:</label>
+                        <input type="file" id="photo" name="photo" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">إرسال الطلب</button>
+        </form>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
